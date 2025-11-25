@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <h1 class="h3 mb-4">Edit task</h1>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <%= render "form", task: @task %>
+      </div>
+    </div>
+
+    <p class="mt-3">
+      <%= link_to task_path(@task), class: "btn btn-link" do %>
+        <i class="fa-solid fa-arrow-left me-1"></i> Back to task
+      <% end %>
+    </p>
+  </div>
+</div>
